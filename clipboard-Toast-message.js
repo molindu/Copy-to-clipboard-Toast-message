@@ -1,7 +1,7 @@
 import { Clipboard, ToastAndroid } from 'react-native';
 // import Toast from 'react-native-simple-toast';
 
-const copyToClipboard = ({ message }) => {
+const copyToClipboard = ( message ) => {
         Clipboard.setString(message);
         console.log(message);
         ToastAndroid.showWithGravity(
@@ -10,4 +10,4 @@ const copyToClipboard = ({ message }) => {
             ToastAndroid.BOTTOM
         )
         // Toast.show('Copied', Toast.SHORT);
-    };
+};
